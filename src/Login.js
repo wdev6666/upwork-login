@@ -12,6 +12,10 @@ function Login() {
   };
 
   const validateEmail = () => {
+    if (email.length === 0) {
+      alert("Enter valid email address!");
+      return false;
+    }
     var validRegex =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
